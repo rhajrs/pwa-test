@@ -13,6 +13,14 @@ setInterval(function() {
 
 // Register service worker to control making site work offline
 
+const testBtn = document.querySelector('.test-button');
+addBtn.style.display = 'none';
+if('serviceWorker' in navigator) {
+  testBtn.textContents = "1111";
+} else {
+  testBtn.textContents = "2222";
+}
+
 if('serviceWorker' in navigator) {
   alert('11111');
   navigator.serviceWorker
