@@ -163,6 +163,7 @@ function subscribe () {
       console.log('Service Worker Registered');
 
       // TODO: Push 기능 초기화
+      initPush();
 
       regist.addEventListener('updatefound', () => {
         const newWorker = regist.installing;
