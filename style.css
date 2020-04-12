@@ -19,6 +19,13 @@ img {
   left: 1px;
 }
 
+.test-button {
+  position: absolute;
+  top: 15px;
+  left: 1px;
+}
+
+
 @media (orientation: landscape) {
   img {
     height: 100%;
