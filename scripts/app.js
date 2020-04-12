@@ -155,11 +155,11 @@ function subscribe () {
       });
   }
 
-
-  alert(navigator['serviceWorker']);
   // TODO: 아래에 서비스워커 등록
   if ('serviceWorker' in navigator) {
+    alert('11111');
     navigator.serviceWorker.register('./service-worker.js').then(regist => {
+      alert('22222');
       swRegist = regist;
       console.log('Service Worker Registered');
 
