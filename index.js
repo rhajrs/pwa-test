@@ -20,11 +20,15 @@ if('serviceWorker' in navigator) {
   testBtn.textContent = "2222";
 }
 
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/pwa-test/sw.js')
-           .then(function() { console.log('Service Worker Registered'); });
-}
+navigator[‘serviceWorker’]
+  .register('/pwa-test/sw.js')
+  .then(function() { console.log('Service Worker Registered'); });
+
+//if('serviceWorker' in navigator) {
+//  navigator.serviceWorker
+//           .register('/pwa-test/sw.js')
+//           .then(function() { console.log('Service Worker Registered'); });
+//}
 
 // Code to handle install prompt on desktop
 
