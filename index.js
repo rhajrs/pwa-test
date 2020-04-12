@@ -20,7 +20,7 @@ if('serviceWorker' in navigator) {
   testBtn.textContent = "2222";
 }
 
-navigator[‘serviceWorker’]
+navigator['serviceWorker']
   .register('/pwa-test/sw.js')
   .then(function() { console.log('Service Worker Registered'); });
 
