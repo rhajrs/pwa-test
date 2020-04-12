@@ -22,7 +22,6 @@ if('serviceWorker' in navigator) {
 }
 
 if('serviceWorker' in navigator) {
-  alert('11111');
   navigator.serviceWorker
            .register('/pwa-test/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
