@@ -16,9 +16,9 @@ setInterval(function() {
 const testBtn = document.querySelector('.test-button');
 addBtn.style.display = 'none';
 if('serviceWorker' in navigator) {
-  testBtn.textContents = "1111";
+  testBtn.textContent = "1111";
 } else {
-  testBtn.textContents = "2222";
+  testBtn.textContent = "2222";
 }
 
 if('serviceWorker' in navigator) {
