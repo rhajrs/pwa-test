@@ -140,16 +140,11 @@ function subscribe () {
       }
     });
   
-    alert(swRegist);
-    alert(swRegist.pushManager);
-    alert(swRegist.pushManager.getSubscription);
     swRegist.pushManager.getSubscription()
       .then(function(subscription) {
-        alert('5555');
         isSubscribed = !(subscription === null);
         updateSubscription(subscription);
   
-        alert('66666');
         if (isSubscribed) {
           console.log('User IS subscribed.');
         } else {
