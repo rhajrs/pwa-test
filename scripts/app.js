@@ -2,7 +2,7 @@
   'use strict';
 
   let appServerPublicKey = 'BBDQdyQ7GYi2-ScXvUC_R1nuYXgHePdNoHQ1xaGVlepgC6UpJtU_7MXKQIklsXxg6ytUyeh_f-x2jwXHvOutHRQ';
-  let isSubcribed = false; 
+  let isSubscribed = false; 
   let swRegist = null;
 
   function urlB64ToUint8Array(base64String) {
