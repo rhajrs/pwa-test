@@ -131,6 +131,7 @@ function subscribe () {
 
   // Push 초기화
   function initPush () {
+    alert('333');
     const pushButton = document.getElementById('subscribe')
     pushButton.addEventListener('click', () => {
       if (isSubscribed) {
@@ -140,11 +141,14 @@ function subscribe () {
       }
     });
   
+    alert('4444');
     swRegist.pushManager.getSubscription()
       .then(function(subscription) {
+        alert('5555');
         isSubscribed = !(subscription === null);
         updateSubscription(subscription);
   
+        alert('66666');
         if (isSubscribed) {
           console.log('User IS subscribed.');
         } else {
@@ -157,9 +161,7 @@ function subscribe () {
 
   // TODO: 아래에 서비스워커 등록
   if ('serviceWorker' in navigator) {
-    alert('11111');
     navigator.serviceWorker.register('./service-worker.js').then(regist => {
-      alert('22222');
       swRegist = regist;
       console.log('Service Worker Registered');
 
