@@ -131,7 +131,6 @@ function subscribe () {
 
   // Push 초기화
   function initPush () {
-    alert('333');
     const pushButton = document.getElementById('subscribe')
     pushButton.addEventListener('click', () => {
       if (isSubscribed) {
@@ -141,7 +140,9 @@ function subscribe () {
       }
     });
   
-    alert('4444');
+    alert(swRegist);
+    alert(swRegist.pushManager);
+    alert(swRegist.pushManager.getSubscription);
     swRegist.pushManager.getSubscription()
       .then(function(subscription) {
         alert('5555');
